@@ -1,0 +1,71 @@
+/*
+  Author: kaluba Mulela
+  Email: davidjasonKaluba@gmail.com
+  Date modified: june 1, 2021.
+*/
+
+body {
+  margin: 0 !important;
+  display: flex !important;
+  min-height: 100vh !important;
+  justify-content: center !important;
+  align-items: center !important;
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  transition: background-color 1s;
+}
+
+.quotebox {
+  height: auto;
+  width: 100%;
+  border: 1px rgb(145, 126, 126) solid;
+  border-radius: 10px;
+  text-align: right;
+  max-width: 35rem
+
+}
+
+#quote {
+  margin: 20px;
+  text-align: left;
+}
+
+.fadeIn {
+  opacity: 0;
+  display: block;
+  animation: slidein 1s ease-out forwards;
+}
+
+@keyframes slidein {
+  0% {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+#author {
+  margin: 20px;
+  font-style: italic;
+}
+
+#newquote {
+  margin: 20px;
+  position: relative;
+  border-radius: 5px;
+  height: 35px;
+  width: 100px;
+  font-weight: 700;
+  font-family: "Segoe UI", "Tahoma", "Geneva", "Verdana", sans-serif;
+  color: white;
+}
